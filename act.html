@@ -6,9 +6,7 @@
     <title>FakeGoogle</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: block;
         }
         h1 {
             font-size: 3rem;
@@ -18,18 +16,39 @@
         .between {
             display: flex;
             justify-content: space-between;
+            padding-left: 10rem;
+            padding-right: 10rem;
         }
         input {
-            width: 100%;
+            width: 75%;
             font-size: 1.5rem;
+            margin: 1rem;
         }
+        .cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+        
 
     </style>
 </head>
 <body>
+    <div class="cont">
     <h1>FakeGoogle</h1>
+    </div>
     <form>
+        <div class="cont">
         <input type="text" name="q" id="q" placeholder="Search Google or type a URL">
+        </div>
         <div class="between">
         <button type="submit" value="Google Search">Search </button>
         <button type="submit" value="I'm Feeling Lucky"> I'm Feeling Lucky</button>
